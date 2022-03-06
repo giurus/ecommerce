@@ -1,0 +1,49 @@
+.navegacion nav ul {
+	position: relative;
+}
+
+.navegacion nav > ul > li {
+	display: inline-block;
+}
+
+.navegacion nav > ul > li > a {
+	color: black;
+	display: block;
+}
+
+.navegacion nav ul li .submenu {
+	position: absolute;
+	z-index: 3;
+	background: white;
+	display: none;
+}
+
+.navegacion nav ul li:hover .submenu {
+	display: flex;
+}
+
+.submenu ul li a {
+	color: black;
+}
+
+.casita {
+	font-size: 20px;
+}
+
+.promociones {
+	border-bottom: 2px solid red;
+}
+
+.clasesubcategorias:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 3px;
+	width: 0px;
+	background: transparent;
+	transition: width 0.5s ease, background-color 0.5s ease;
+}
+.clasesubcategorias:hover:after {
+	width: 75%;
+	background: orange;
+}

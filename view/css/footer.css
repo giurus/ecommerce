@@ -1,0 +1,34 @@
+.formSuscribirse {
+	padding-top: 20px;
+	position: relative;
+}
+
+.btnSuscribirse {
+	background: black;
+	color: white;
+	text-transform: uppercase;
+	border-radius: 10px;
+}
+
+.newsletter .row {
+	border-radius: 80px;
+}
+
+.barraFinal {
+	background: black;
+	height: 160px;
+	color: white;
+}
+
+.iconos img {
+	width: 8%;
+}
+
+.info a {
+	color: gray;
+	font-size: 18px;
+}
+
+.info a:hover {
+	color: black;
+}

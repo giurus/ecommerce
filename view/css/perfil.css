@@ -1,0 +1,38 @@
+.clasificacion label {
+	color: gray;
+}
+
+.clasificacion input[type='radio'] {
+	display: none;
+}
+
+.clasificacion {
+	direction: rtl; /* derecha a izquierda */
+	unicode-bidi: bidi-override; /* bidi de bidireccional */
+}
+
+.clasificacion label:hover,
+.clasificacion label:hover ~ label {
+	color: orange;
+}
+
+.clasificacion input[type='radio']:checked ~ label {
+	color: orange;
+}
+
+/**SECCION PERFIL*/
+
+.links {
+	display: flex;
+	align-items: center;
+}
+
+.links a {
+	padding: 15px;
+	background: #f5f5f5;
+	color: gray;
+}
+
+.links a:hover .link-item {
+	color: black;
+}

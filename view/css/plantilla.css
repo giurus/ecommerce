@@ -1,0 +1,169 @@
+/**GLOBALES**/
+* {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+ul,
+ol {
+	padding: 0px;
+}
+
+body {
+	background: #fffcf8;
+}
+
+.breadcrumb {
+	background: none;
+}
+
+button,
+a {
+	outline: none !important;
+}
+
+a:visited,
+a:link,
+a:focus,
+a:hover,
+a:active {
+	list-style: none;
+	text-decoration: none;
+}
+
+.barraSuperior {
+}
+
+.barraSuperior a {
+}
+
+.backColor,
+.backColor a {
+}
+
+.numeroContacto {
+	padding-top: 10px;
+	line-height: 30px;
+	color: white;
+}
+
+/**BREADCRUMB**/
+.fondoBreadcrumb {
+	margin-bottom: 0;
+	background: rgba(0, 0, 0, 0);
+}
+
+/**ERROR 404, VERIFICAR**/
+.error404,
+.verificar {
+	color: #333;
+}
+
+/**SCROLL UP**/
+#scrollUp {
+	bottom: 20px;
+	right: 20px;
+	width: 50px;
+	height: 50px;
+	background: url(../img/plantilla/flecha.jpg);
+}
+
+/**ESCRITORIO GRANDE 1366PX EN ADELANTE**/
+
+@media (min-width: 1200px) {
+	.col-lg-0 {
+		display: none;
+	}
+
+	.error404 h1 {
+		font-size: 300px;
+		text-shadow: 8px 8px 1px #dadada;
+	}
+
+	.verificar h3 {
+		margin-top: 30px;
+		font-size: 100px;
+		text-shadow: 4px 4px 1px #dadada;
+	}
+}
+
+/** MEDIANA 1024PX**/
+
+@media (max-width: 1199px) and (min-width: 992px) {
+	.col-md-0 {
+		display: none;
+	}
+
+	.error404 h1 {
+		font-size: 200px;
+		text-shadow: 6px 6px 1px #dadada;
+	}
+
+	.verificar h3 {
+		margin-top: 30px;
+		font-size: 100px;
+		text-shadow: 4px 4px 1px #dadada;
+	}
+}
+
+/**PEQUEÑO 768PX **/
+
+@media (max-width: 991px) and (min-width: 768px) {
+	.col-sm-0 {
+		display: none;
+	}
+
+	.error404 h1 {
+		font-size: 150px;
+		text-shadow: 4px 4px 1px #dadada;
+	}
+
+	.verificar h3 {
+		margin-top: 30px;
+		font-size: 100px;
+		text-shadow: 4px 4px 1px #dadada;
+	}
+}
+
+/**ENTRA PEQUEÑO XS 320PX**/
+
+@media (max-width: 767px) {
+	.col-xs-0 {
+		display: none;
+	}
+
+	.error404 h1 {
+		font-size: 75px;
+		text-shadow: 2px 2px 1px #dadada;
+	}
+
+	.verificar h3 {
+		margin-top: 30px;
+		font-size: 50px;
+		text-shadow: 2px 2px 1px #dadada;
+	}
+}
+
+/*PAGINACION*/
+.pagination > li > a {
+	background-color: white;
+	color: black;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover {
+	color: #5a5a5a;
+	background-color: #eee;
+	border-color: #ddd;
+}
+
+.pagination > .active > a {
+	color: white;
+	background-color: black !important;
+	border: none !important;
+}

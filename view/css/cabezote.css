@@ -1,0 +1,42 @@
+/**TOP BARRA**/
+#top ul {
+	padding-top: 8px;
+}
+
+#top ul li {
+	display: inline;
+	line-height: 30px;
+	margin: 0px 5px;
+	color: white;
+}
+
+.registro ul {
+	text-align: right;
+	font-size: 12px;
+}
+
+.registro ul li {
+	cursor: pointer;
+}
+
+/***HEADER SEGUNDA BARRA (BUSCADO Y CARRITO)***/
+header #buscador input {
+	border-radius: 0;
+}
+
+header #buscador button {
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
+
+header #carrito p {
+	font-size: 16px;
+}
+
+input:focus {
+	outline: none;
+	outline-width: 0;
+	box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+}

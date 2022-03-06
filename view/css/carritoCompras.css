@@ -1,0 +1,20 @@
+.cabeceraCarrito {
+	height: 40px;
+}
+
+.cabeceraCarrito h3 {
+	margin-top: -5px;
+}
+
+.cabeceraCheckout {
+	height: 66px;
+}
+
+#checkpayu,
+#checkpaypal {
+	font-size: 5px;
+}
+
+.contenidoCheckout {
+	padding: 0 2px;
+}

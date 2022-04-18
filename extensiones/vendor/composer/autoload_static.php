@@ -10,6 +10,7 @@ class ComposerStaticInitd248826c41aa8edf4694e0665f6dedd9
         'P' => 
         array (
             'Psr\\Log\\' => 8,
+            'PHPMailer\\PHPMailer\\' => 20,
         ),
     );
 
@@ -17,6 +18,10 @@ class ComposerStaticInitd248826c41aa8edf4694e0665f6dedd9
         'Psr\\Log\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+        ),
+        'PHPMailer\\PHPMailer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
         ),
     );
 
@@ -30,12 +35,17 @@ class ComposerStaticInitd248826c41aa8edf4694e0665f6dedd9
         ),
     );
 
+    public static $classMap = array (
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitd248826c41aa8edf4694e0665f6dedd9::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitd248826c41aa8edf4694e0665f6dedd9::$prefixDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInitd248826c41aa8edf4694e0665f6dedd9::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInitd248826c41aa8edf4694e0665f6dedd9::$classMap;
 
         }, null, ClassLoader::class);
     }

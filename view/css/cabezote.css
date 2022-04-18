@@ -33,6 +33,10 @@ header #carrito p {
 	font-size: 16px;
 }
 
+header .backColor{
+	background-color: #000000
+}
+
 input:focus {
 	outline: none;
 	outline-width: 0;

@@ -1,7 +1,10 @@
 <?php
 
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
 class ControladorUsuarios{
-    /*public function ctrRegistroUsuario(){
+    public function ctrRegistroUsuario(){
         if(isset($_POST["nombreUsu"])){
             if(preg_match('/^[a-zA-ZñÑáéíóúÁÉÍÓÚ ]*$/',$_POST["nombreUsu"]) && preg_match('/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/',$_POST["correoUsu"]) && preg_match('/^[a-zA-Z0-9]*$/',$_POST["passwordUsu"])){
                 $encriptar = crypt($_POST["passwordUsu"], '$2a$07$asxx54ahjppf45sd87a5a4dDDGsystemdev$');
@@ -147,7 +150,7 @@ class ControladorUsuarios{
                     </script>';
             }
         }
-    }*/
+    }
 
     /**MOSTRAR USUARIOS**/
     static public function ctrMostrarUsuario($item,$valor){
@@ -246,17 +249,13 @@ class ControladorUsuarios{
 
     /**OLVIDO DE CONTRASEÑA**/
     public function ctrOlvidoPassword(){
-        /*if(isset($_POST["passEmail"])){
+        if(isset($_POST["passEmail"])){
             if(preg_match('/^[^0-9][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[@][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,4}$/', $_POST["passEmail"])){
                 
                 function generarPassword($longitud){
                     $key = "";
                     $patter = "1234567890abcdefghijklmnopqrstuvwxyz";
-                    $max = strlen($patter)-1;
-                    for($i=0;$i<$longitud;$i++){
-                        $key .= $patter{mt_rand(0,$max)};
-                        
-                    }
+                    $key = substr(str_shuffle($patter), 0,  $longitud);
                     return $key;
                 }
                 $nuevaPassword = generarPassword(11);
@@ -383,7 +382,7 @@ class ControladorUsuarios{
                             </script>';
                 }
             }
-        }*/
+        }
     }
 
     /**ACTUALIZAR USUARIO**/

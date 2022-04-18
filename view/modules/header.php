@@ -1,7 +1,7 @@
 <?php 
 
     $logotipo = ControladorPlantilla::ctrEstiloPlantilla();
-    $textoEditTop = ControladorPlantilla::ctrEstiloPlantilla();
+    $estiloPlantilla = ControladorPlantilla::ctrEstiloPlantilla();
     $servidor = Ruta::ctrRutaServidor();
     $url = Ruta::ctrRuta();
 
@@ -25,7 +25,7 @@
         <div class="row">
             <!--TEXTO SUPERIOR IZQUIERDA-->
             <div class="col-lg-6 col-sm-12 numeroContacto">
-                <p><?=$textoEditTop['textoEditTop']?></p>
+                <p><?=$estiloPlantilla['textoEditTop']?></p>
             </div>
             <!---------------------------->
             <!------ENLACES TOP DERECHA------->

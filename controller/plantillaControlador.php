@@ -7,13 +7,13 @@ class ControladorPlantilla {
     }
 
     
-    public function ctrEstiloPlantilla(){
+    static public function ctrEstiloPlantilla(){
         $tabla = "plantilla";
         $respt = ModeloPlantilla::mdlEstiloPlantilla($tabla);
         return $respt;
     } 
 
-    public function ctrMostrarComercio(){
+    static public function ctrMostrarComercio(){
         $tabla = "comercio";
         $respt = ModeloPlantilla::mdlMostrarComercio($tabla);
         return $respt;
